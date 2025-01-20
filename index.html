@@ -3,6 +3,7 @@
     <!-- Source code: https://github.com/ProfiiQus/Portfolio -->
     <!-- Design inspired by ayo.so - https://ayo.so/ -->
     <head>
+        <meta name="robots" content="noindex, nofollow">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -13,20 +14,86 @@
             <img class="profile-icon" src="img/profiiqus.png">
         </div>
         <div class="profile-content" style="margin-top: 72px;">
-            <h2 style="color: rgb(212 212 216); font-weight: 700; margin-bottom: 4px;">ProfiiQus</h2>
-            <span style="color: rgb(107, 114, 128);">Pavel Fesenko</span>
+            <h2 style="color: rgb(212 212 216); font-weight: 700; margin-bottom: 4px;">Pavel Fesenko</h2>
+            <span style="color: rgb(107, 114, 128);">profiiqus</span>
 
+            <!-- Intro text -->
             <div class="showcase-wrapper">
-                <div class="showcase-box">
-                    <div class="showcase-icon">
-                        <img src="img/linkedin.png">
-                    </div>
-                    <div class="showcase-content">
-                        <span class="showcase-header">My resume</span>
-                        <span class="showcase-description">https://www.linkedin.com/in/pavel-fesenko-23300a196/</span>
-                    </div>
+                <div class="showcase-text-box">
+                    <p>I am a <strong>developer</strong>, <strong>system administrator</strong> and sometimes a <strong>manager</strong> from Prague, Czech republic. I currently work full-time, helping to build and manage a modular low-code web platform. In my spare time, I focus on software development with emphasis on systems monitoring.</p>
+                    <strong>Let's connect!</strong> I am always open to new opportunities and challenges. Feel free to contact me via Discord or LinkedIn.
                 </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="showcase-wrapper">
+                <a href="https://www.linkedin.com/in/pavel-fesenko-23300a196/" target="_blank" class="showcase-link">
+                    <div class="showcase-box">
+                        <div class="showcase-icon">
+                            <img src="img/icons/linkedin.png">
+                        </div>
+                        <div class="showcase-content">
+                            <span class="showcase-header">LinkedIn Resume</span>
+                            <span class="showcase-description">https://linkedin.com/in/pavel-fesenko-23300a196/</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="showcase-wrapper">
+                <a href="https://github.com/profiiqus" target="_blank" class="showcase-link">
+                    <div class="showcase-box">
+                        <div class="showcase-icon">
+                            <img src="img/icons/github.png">
+                        </div>
+                        <div class="showcase-content">
+                            <span class="showcase-header">GitHub</span>
+                            <span class="showcase-description">https://github.com/profiiqus</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tech & Skills -->
+            <h2>Technologies and Skills</h2>
+            <div class="showcase-wrapper">
+                <div class="showcase-text-box">
+                    <ul>
+                        <li>System administration of <strong>Linux</strong> and <strong>Windows</strong> machines. Ranging from installations and application deployment to security and application management. Scripting in <strong>Bash</strong> and <strong>Powershell</strong>.</li>
+                        <li>Automation with <strong>CI/CD pipelines</strong>, enhanced by the usage of various external tools and services, such as <strong>Jenkins</strong> and <strong>Docker/K8s</strong> for deployment. Integration and administration of <strong>GitLab</strong> and <strong>Azure</strong>.</li>
+                        <li>Systems monitoring with various tools, such as <strong>Prometheus</strong> and <strong>Grafana</strong>, <strong>Sensu</strong>, <strong>Alerta</strong> and the "Monitoring as a Code" philosophy. Experience with development of a very custom monitoring solution.</li>
+                        <li>Development of web, desktop and mobile applications, <strong>Spigot and Bungeecord</strong> plugins, <strong>Discord bots</strong>. Utilization of technologies such as <strong>.NET</strong>, <strong>Java/Kotlin</strong>, <strong>Flutter</strong>, <strong>Golang</strong> and others.</li>
+                        <li>Deep knowledge of database administration and usage, working primarily with <strong>MSSQL</strong>, <strong>MySQL</strong> and other no-SQL databases such as <strong>Redis</strong>. Advanced usage of <strong>SQL</strong>.</li>
+                        <li>Integration with organization services, such as <strong>Active Directories</strong>, <strong>Databases</strong>, <strong>Sharepoint</strong>, <strong>IBM LotusNotes</strong> and custom <strong>APIs</strong>.</li>
+                        <li><strong>Project management</strong> and ability to <strong>assist other team members</strong> with various tasks (to the extent of building a custom <strong>VS Code</strong> extension to speed up the development). <strong>Communication with company clients.</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Latest blog posts -->
+            <h2>Articles</h2>
+            <div class="showcase-wrapper">
+                <a href="https://medium.com/@pavelfesenko/minecraft-spigot-development-listening-to-events-78048a31f85b" target="_blank" class="showcase-link">
+                    <div class="showcase-box">
+                        <div class="showcase-icon">
+                            <img src="img/icons/medium.png">
+                        </div>
+                        <div class="showcase-content">
+                            <span class="showcase-header">Minecraft Spigot Development: Listening to Events</span>
+                            <span class="showcase-description"><strong>October 2020</strong> - Brief introduction to the world of Spigot event handlers</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Pavel Fesenko. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").innerHTML = new Date().getFullYear();
+    </script>
 </html>
