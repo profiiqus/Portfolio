@@ -54,7 +54,7 @@ body {
 
 .showcase-box {
     background-color: rgb(24, 24, 27);
-    width: 60%;
+    width: 58%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -131,6 +131,10 @@ body {
     margin-top: 3rem;
 }
 
+.text-align-left {
+    text-align: left !important;
+}
+
 footer a {
     color: lightblue; /* or specify another color if desired */
     font-size: 14px;
@@ -138,4 +142,33 @@ footer a {
 
 a:visited {
     color: lightblue; /* or specify another color if desired */
+}
+
+/* Media query for devices with a maximum width of 600px */
+@media (max-width: 600px) {
+    .header {
+        height: 150px;
+        background-position: 50% 30%;
+    }
+
+    .profile-content {
+        width: 100%;
+    }
+
+    .showcase-text-box {
+        width: 80%;
+    }
+
+    .showcase-box {
+        width: 76%;
+    }
+
+    .profile-box {
+        width: 76%;
+    }
+    
+    .showcase-wrapper {
+        margin-top: 15px;
+    }
+
 }
