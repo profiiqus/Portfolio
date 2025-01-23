@@ -130,3 +130,12 @@ body {
     bottom: 0;
     margin-top: 3rem;
 }
+
+footer a {
+    color: lightblue; /* or specify another color if desired */
+    font-size: 14px;
+}
+
+a:visited {
+    color: lightblue; /* or specify another color if desired */
+}
